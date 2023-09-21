@@ -68,10 +68,11 @@
 // ### Ejercicio 4
 // - Crear una funcion que reciba como parametro un precio y devuelva el precio mas el IVA.
 
-const impuesto = (precio) =>{
-    const resultado = precio + 0.21
-    return resultado
-}
+// const impuesto = (precio) =>{
+//     return precio*0.21
+// }
+
+// impuesto(1000)
 
 
 // ### Ejercicio 5
