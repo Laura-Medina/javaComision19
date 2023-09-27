@@ -98,6 +98,19 @@
 // esVocal('n') // true
 // ```
 
+
+const regexConsonantes = new RegExp('[^aeiouAEIOU]', 'g');
+
+const letra = prompt("Ingresa una letra")
+if (regexConsonantes.test(letra)){
+    console.log("Es una consonante")
+    } else {
+    console.log("Es una vocal")
+}
+
+
+
+
 // ### `esHoraValida(hora)`
 // Crear una función `esHoraValida` que tome como argumento un string `hora` con el formato `HH:mm` y determine si es una hora válida del día o no
 
