@@ -187,8 +187,19 @@
 // esParOImpar(10) // 'par'
 // ```
 
-// ### `esPositivoONegativo(numero)`
 
+// const esParOImpar=(numero)=>{
+//     if (numero % 2 === 0){
+//     return "es par"
+// }else{
+//     return "es impar"
+// }
+// }
+
+// console.log(esParOImpar(3))
+// console.log(esParOImpar(10))
+
+// ### `esPositivoONegativo(numero)`
 // Crear una función `esPositivoONegativo` que acepte como argumento un `numero` y devuelva el string `positivo` si el `numero` es positivo, o el string `negativo` si el `numero` es negativo
 
 // ```javascript
@@ -196,8 +207,17 @@
 // esPositivoONegativo(-5) // 'negativo'
 // ```
 
-// ### `avanzarSemaforo(colorActual)`
+// const esPositivoONegativo=(numero)=>{
+//     if (numero >=0){
+//     return "es numero positivo"
+// }else if(numero<=-0){
+//     return "es numero negativo"
+// }
+// }
+// console.log(esPositivoONegativo(3))
+// console.log(esPositivoONegativo(-5))
 
+// ### `avanzarSemaforo(colorActual)`
 // Crear una función `avanzarSemaforo` que acepte como argumento un string `colorActual` y devuelva un string con el siguiente color del semáforo, siguiendo el orden: verde -> amarillo -> rojo -> verde
 
 // ```javascript
@@ -206,8 +226,18 @@
 // avanzarSemaforo('rojo')      // 'verde'
 // ```
 
-// ### `obtenerDiasMes(mes)`
+// const avanzarSemaforo =(colorActual)
+// if (colorActual === 'verde') {
+//     return 'amarillo'
+// }
+//     if (colorActual === 'amarillo') {
+//     return 'rojo'
+//     }
+// if (colorActual === 'rojo') {
+//     return 'verde'
+// }
 
+// ### `obtenerDiasMes(mes)`
 // Crear una función `obtenerDiasMes` que tome como argumento un string `mes` y devuelva un número dependiendo de la cantidad de días que tenga ese mes
 
 // ```javascript
@@ -215,8 +245,16 @@
 // obtenerDiasMes("febrero")   // 29
 // ```
 
-// ### `obtenerGeneracion(anioNacimiento)`
+// const obtenerDiasMes=(mes)=>{
+//     if(mes === "diciembre"){
+//     return 31
+// }if(mes ==="febrero")
+// return 29
+// }
+// console.log(obtenerDiasMes("diciembre"))
+// console.log(obtenerDiasMes("febrero"))
 
+// ### `obtenerGeneracion(anioNacimiento)`
 // Crear una función `obtenerGeneracion` que tome como argumento un número `anioNacimiento` y devuelva un string con la generación a la que pertenece, siguientdo estas reglas:
 
 // | Generación | Años de nacimiento |
@@ -226,10 +264,21 @@
 // | Millennials | 1981-1993 |
 // | Generación Z | 1994-2010 |
 
+// const obtenerGeneracion=(anioNacimiento)=>{
+//     if(anioNacimiento>=1949 && anioNacimiento<=1968){
+//         return "sos baby boomer"
+//     }if(anioNacimiento>=1969 && anioNacimiento<=1980){
+//         return "sos generacion X"
+//     }if (anioNacimiento>=1981&& anioNacimiento<=1993){
+//         return "sos millenial"
+//     }if (anioNacimiento>=1994&& anioNacimiento<=2010)
+//             return "sos generacion Z"
+//         }
+
+//         console.log(obtenerGeneracion(1992))
+
 // ### `obtenerSensacion(temperatura)`
-
 // Crear una función `obtenerSensacion` que tome como argumento un número `temperatura` y devuelva un string dependiendo de la `temperatura`, con las siguientes reglas:
-
 // | Temperatura | Mensaje |
 // | --- | --- |
 // | Menor a 0° | ¡Está helando!
@@ -242,10 +291,25 @@
 // obtenerSensacion(33) // "¡Hace mucho calor!"
 // ```
 
+// const obtenerSensacion=(temperatura)=>{
+//     if(temperatura <= 0){
+//     return "esta helado"
+//     }if(temperatura >=0 && temperatura<= 15){
+//     return "hace frio"
+//     }if(temperatura >=15 && temperatura<=25){
+//     return "esta lindo"
+//     }if(temperatura >=25 && temperatura<=30){
+// return "hace calor"
+//     }if (temperatura>=30 ){
+// return "hace mucho calor "
+// }
+// }
+
+// console.log(obtenerSensacion(33))
+
+
 // ### `obtenerNota(puntaje)`
-
 // Crear una función `obtenerNota` que tome como argumento un número `puntaje` y devuelva un string dependiendo del `puntaje` redondeado, con las siguientes reglas:
-
 // | Puntaje | Nota |
 // | --- | --- |
 // | Menor a 6 | Desaprobado
@@ -261,8 +325,25 @@
 // obtenerNota(12)   // "Puntaje inválido"
 // ```
 
-// ### `jugarPiedraPapelTijera(a, b)`
+// const obtenerNota=(puntaje)=>{
+//     if(puntaje<6){
+//         return "desaprobado"
+//     }if(puntaje>=6 && puntaje<=7){
+//         return "regular"
+//     }if(puntaje>=7 && puntaje<=10){
+//         return"muy bueno"
+//     }if(puntaje===10){
+//         return "excelente"
+//     }if(puntaje<0 || puntaje>10){
+//         return "puntaje invalido"
+//     }
 
+// }
+// console.log(obtenerNota(7))
+// console.log(obtenerNota(9.6))
+// console.log(obtenerNota(12))
+
+// ### `jugarPiedraPapelTijera(a, b)`
 // Crear una función `jugarPiedraPapelTijera` que tome como argumentos dos strings `a` y `b` que representen una jugada (`piedra`, `papel`, `tijera`) y dependiendo el devuelva un string con un mensaje avisando qué jugada ganó (o si hubo empate)
 
 // ```javascript
@@ -275,3 +356,24 @@
 // jugarPiedraPapelTijera('piedra', 'piedra')  // ¡Empate!
 // jugarPiedraPapelTijera('papel', 'papel')    // ¡Empate!
 // jugarPiedraPapelTijera('tijera', 'tijera')  // ¡Empate!
+
+const jugarPiedraPapelTijera=(a,b )=>{
+    if (a === "piedra"&& b==="tijera" || a==="tijera"&& b==="piedra"){
+    return "gano piedra "
+}if (a==="papel"&&b==="piedra"||a==="piedra"&&b==="papel"){
+    return "gano papel"
+}if (a==="papel" && b==="tijera"||a==="tijera" && b==="papel"){
+    return "gano tijera"
+}if (a==="piedra"&&b==="piedra"||a==="papel"&& b==="papel"|| a==="tijera"&& b==="tijera"){
+    return "empate"
+}
+}
+console.log(jugarPiedraPapelTijera('tijera', 'piedra'))
+console.log(jugarPiedraPapelTijera('piedra', 'tijera'))
+console.log(jugarPiedraPapelTijera('papel', 'piedra'))
+console.log(jugarPiedraPapelTijera('piedra', 'papel'))
+console.log(jugarPiedraPapelTijera('papel', 'tijera'))
+console.log(jugarPiedraPapelTijera('tijera', 'papel'))
+console.log(jugarPiedraPapelTijera('piedra', 'piedra'))
+console.log(jugarPiedraPapelTijera('papel', 'papel'))
+console.log(jugarPiedraPapelTijera('tijera', 'tijera'))
