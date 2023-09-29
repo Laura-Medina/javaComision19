@@ -99,17 +99,14 @@
 // ```
 
 
-const regexConsonantes = new RegExp('[^aeiouAEIOU]', 'g');
+// const regexConsonantes = new RegExp('[^aeiouAEIOU]', 'g');
 
-const letra = prompt("Ingresa una letra")
-if (regexConsonantes.test(letra)){
-    console.log("Es una consonante")
-    } else {
-    console.log("Es una vocal")
-}
-
-
-
+// const letra = prompt("Ingresa una letra")
+// if (regexConsonantes.test(letra)){
+//     console.log("Es una consonante")
+//     } else {
+//     console.log("Es una vocal")
+// }
 
 // ### `esHoraValida(hora)`
 // Crear una función `esHoraValida` que tome como argumento un string `hora` con el formato `HH:mm` y determine si es una hora válida del día o no
@@ -120,6 +117,15 @@ if (regexConsonantes.test(letra)){
 // esHoraValida('28:05') // false
 // esHoraValida('00:00') // true
 // ```
+
+// const regexformatoHora = new RegExp('^([01]\d|2[0-3]):([0-5]\d)$');
+// const esHoraValida=(hora)=>{
+//     if (regexformatoHora.test(hora)){
+//         console.log("es una hora valida")
+//     } else {
+//         console.log("no es una hora valida")
+//     }
+// }
 
 // ### `puedeRenovarCarnet(pasoTests, tieneMultasImpagas, pagoImpuestos)`
 // Crear una función `puedeRenovarCarnet` que tome como argumentos tres booleanos, `pasoTests`, `tieneMultasImpagas` y `pagoImpuestos`, y devuelva `true` si una persona está habilitada para renovar su carnet de conducir o `false` si no. Una persona puede renovar su carnet si pasó los tests, no tiene multas impagas y pagó todos los impuestos
@@ -135,6 +141,18 @@ if (regexConsonantes.test(letra)){
 // puedeRenovarCarnet(false, false, false) // false
 // ```
 
+// const pasoTest = true
+// const pagoImpuestos = true
+// const tieneMultasImpagas = false
+
+// const puedeRenovarCarnet = ()=>{
+//     if(pasoTest && pagoImpuestos){
+//         console.log("puede renovar su carnet")
+// }else if (tieneMultasImpagas){
+//     console.log("no puede renovar su carnet")
+// }
+// }
+
 // ### `puedeGraduarse(asistencia, materiasAprobadas, tesisAprobada)`
 // Crear una función `puedeGraduarse` que tome como argumentos dos números `asistencia` y `materiasAprobadas` y un booleano `tesisAprobada`, y devuelva `true` si una persona puede gruadarse o `false` si no. Una persona puede graduarse si tiene un 75% de asistencia o más, 50 materias aprobadas o más y la tesis aprobada.
 
@@ -148,6 +166,16 @@ if (regexConsonantes.test(letra)){
 // puedeGraduarse(42, 45, true)  // false
 // puedeGraduarse(28, 45, false) // false
 // ```
+
+// const puedeGraduarse=(asistencia, materiasAprobadas, tesisAprobada)=>{
+//     if(asistencia >=75 && materiasAprobadas>=50 && tesisAprobada){
+//         return true
+//     }else{
+//         return false
+//     }
+// }
+
+
 
 
 // ## Ejercicios con condicionales
