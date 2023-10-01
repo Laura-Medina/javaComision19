@@ -357,23 +357,23 @@
 // jugarPiedraPapelTijera('papel', 'papel')    // ¡Empate!
 // jugarPiedraPapelTijera('tijera', 'tijera')  // ¡Empate!
 
-const jugarPiedraPapelTijera=(a,b )=>{
-    if (a === "piedra"&& b==="tijera" || a==="tijera"&& b==="piedra"){
-    return "gano piedra "
-}if (a==="papel"&&b==="piedra"||a==="piedra"&&b==="papel"){
-    return "gano papel"
-}if (a==="papel" && b==="tijera"||a==="tijera" && b==="papel"){
-    return "gano tijera"
-}if (a==="piedra"&&b==="piedra"||a==="papel"&& b==="papel"|| a==="tijera"&& b==="tijera"){
-    return "empate"
-}
-}
-console.log(jugarPiedraPapelTijera('tijera', 'piedra'))
-console.log(jugarPiedraPapelTijera('piedra', 'tijera'))
-console.log(jugarPiedraPapelTijera('papel', 'piedra'))
-console.log(jugarPiedraPapelTijera('piedra', 'papel'))
-console.log(jugarPiedraPapelTijera('papel', 'tijera'))
-console.log(jugarPiedraPapelTijera('tijera', 'papel'))
-console.log(jugarPiedraPapelTijera('piedra', 'piedra'))
-console.log(jugarPiedraPapelTijera('papel', 'papel'))
-console.log(jugarPiedraPapelTijera('tijera', 'tijera'))
+// const jugarPiedraPapelTijera=(a,b )=>{
+//     if (a === "piedra"&& b==="tijera" || a==="tijera"&& b==="piedra"){
+//     return "gano piedra "
+// }if (a==="papel"&&b==="piedra"||a==="piedra"&&b==="papel"){
+//     return "gano papel"
+// }if (a==="papel" && b==="tijera"||a==="tijera" && b==="papel"){
+//     return "gano tijera"
+// }if (a==="piedra"&&b==="piedra"||a==="papel"&& b==="papel"|| a==="tijera"&& b==="tijera"){
+//     return "empate"
+// }
+// }
+// console.log(jugarPiedraPapelTijera('tijera', 'piedra'))
+// console.log(jugarPiedraPapelTijera('piedra', 'tijera'))
+// console.log(jugarPiedraPapelTijera('papel', 'piedra'))
+// console.log(jugarPiedraPapelTijera('piedra', 'papel'))
+// console.log(jugarPiedraPapelTijera('papel', 'tijera'))
+// console.log(jugarPiedraPapelTijera('tijera', 'papel'))
+// console.log(jugarPiedraPapelTijera('piedra', 'piedra'))
+// console.log(jugarPiedraPapelTijera('papel', 'papel'))
+// console.log(jugarPiedraPapelTijera('tijera', 'tijera'))
