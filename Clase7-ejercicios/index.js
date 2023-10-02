@@ -64,13 +64,13 @@
 // |Mayor o igual a 30° y menor a 35°|Naranja
 // |Mayor a 35°|Rojo
 
-const temperatura=prompt("Ingrese cual es la temperatura")
-if(temperatura<=0){
-    const h1 = document.querySelector('h1')
-    h1.innerText = "temperatura actual 0 grados"
-}
-const h1= document.querySelector("h1")
-h1.style.color="blue"
+// const temperatura=prompt("Ingrese cual es la temperatura")
+// if(temperatura<=0){
+//     const h1 = document.querySelector('h1')
+//     h1.innerText = "temperatura actual 0 grados"
+// }
+// const h1= document.querySelector("h1")
+// h1.style.color="blue"
 
 
 
