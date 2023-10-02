@@ -69,7 +69,7 @@
     }
 
     .box-top{
-        height: 70px;
+        height: 100px;
         width: 40%;
         border: 2px solid white;
         padding: 10px;
@@ -79,10 +79,12 @@
     .text-top{
     padding: 15px;
     font-size: 30px;
+    font-family: 'Anek Gurmukhi', sans-serif;
+
     }
 
     .box-bottom{
-        height: 70px;
+        height: 100px;
         width: 40%;
         border: 2px solid white;
         padding: 10px;
@@ -92,6 +94,7 @@
     .text-bottom{
     padding: 15px;
     font-size: 30px;
+    font-family: 'Anek Gurmukhi', sans-serif;
     }
 
         button {
