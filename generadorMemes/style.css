@@ -1,0 +1,112 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body{
+        background-color: #30343f;
+    }
+
+    .class-nav{
+        display: flex;
+        flex-direction: column;
+        background-color:#191e2b;
+        height: 130px;
+        width: 100%;
+    }
+
+    .title-1{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        padding: 10px;
+        font-size: 35px;
+    }
+
+    .nav-items{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 20px;
+        font-size: 15px;
+    }
+
+    .list-nav{
+        display: inline-block;
+        margin: 10px;
+        color: #ffffff;
+    }
+
+    .a-nav{
+        color: #ffffff;
+    }
+
+    .list-nav:hover{
+        background-color:    #30343f;
+        transition:.3s;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .box-black {
+        width: 40%;
+        height: 500px;
+        background-color: black;
+        background-color: black;
+
+    }
+
+    .box-top{
+        height: 70px;
+        width: 40%;
+        border: 2px solid white;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .text-top{
+    padding: 15px;
+    font-size: 30px;
+    }
+
+    .box-bottom{
+        height: 70px;
+        width: 40%;
+        border: 2px solid white;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .text-bottom{
+    padding: 15px;
+    font-size: 30px;
+    }
+
+        button {
+            width: 200px;
+            height: 50px;
+            background-color: #2e7d32;
+            color: white;
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+    }
+
+    .button-meme, .fa-download{
+        color: white;
+
+    }
