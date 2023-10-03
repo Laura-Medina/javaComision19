@@ -111,7 +111,7 @@
         color: white;
     }
 
-
+    /* este es el css del aside img  */
 .container-aside{
     display: flex;
 }
@@ -157,4 +157,36 @@ h3{
 
 #resetFilters{
     background-color: #393e49;
+}
+
+/* este es el css del aside texto que esta oculto */
+.aside-texto {
+    width: 300px;
+    background-color:#252935;
+    padding: 10px;
+    color: white;
+    position: relative;
+    left: 80%;
+    display: none;
+}
+
+.title-text{
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],  select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    background-color:#393e49;
+}
+
+#spacing,#line-Spacing{
+    background-color:#393e49;
 }

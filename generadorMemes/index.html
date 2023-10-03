@@ -19,6 +19,60 @@
         <li class="list-nav"> <i class="fa-solid fa-font"></i> <a class="a-nav" href="#Text">Text</a></li>
         <li class="list-nav"> <i class="fa-regular fa-lightbulb"></i> <a class="a-nav" href="#Dark Mode" >Dark Mode</a></li>
         </ul>
+        <div class="aside-texto">
+        <h3 class="title-text">TEXT</h3>
+        <label for="texto-top">Top</label>
+        <input type="text" id="texto-top">
+        <label for="sin-texto">Without top text</label>
+        <input type="checkbox" id="sin-texto">
+        <label for="texto-bottom">Bottom</label>
+        <input type="text" id="texto-bottom">
+        <label for="sin-texto">Without bottom text</label>
+        <input type="checkbox" id="sin-texto">
+        <label for="fuente">Font</label>
+        <select id="fuente">
+        <option value="Arial">Arial</option>
+        <option value="Arial Black">Arial Black</option>
+        <option value="American Typewriter">American Typewriter</option>
+        <option value="Andale Mono">Andale Mono</option>
+        <option value="Comic Sans MS">Comic Sans MS</option>
+        <option value="Helvetica">Helvetica</option>
+        <option value="Impact">Impact</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Times New Roman">Times New Roman</option>
+        </select>
+        <div class="alineacion-container">
+        <label>
+        <input type="radio" name="alineacion" value="left">
+        <i class="fas fa-align-left"></i>
+        </label>
+        <label>
+        <input type="radio" name="alineacion" value="center">
+        <i class="fas fa-align-center"></i>
+        </label>
+        <label>
+        <input type="radio" name="alineacion" value="right">
+        <i class="fas fa-align-right"></i>
+        </label>
+        </div>
+        <label for="color">Color</label>
+        <input type="color" id="color" value="#000000">
+        <label for="fondo">Background</label>
+        <input type="color" id="fondo" value="#ffffff">
+        <label for="transparencia">Blur</label>
+        <input type="range" id="transparencia" min="0" max="1" step="0.01" value="1">
+        <label for="contorno">Outiline</label>
+        <select id="contorno">
+        <option value="ninguno">None</option>
+        <option value="oscuro">Dark</option>
+        <option value="claro">Light</option>
+        </select>
+        <label for="espaciado">Spacing</label>
+        <input type="number" id="spacing" value="0">
+        <label for="interlineado">Line Spacing</label>
+        <input type="number" id="line-Spacing" value="1.5">
+        </div>
+
         <div class="container-aside">
             <aside class="sidebar">
             <h2>Image</h2>
@@ -26,6 +80,15 @@
             <input type="text" id="urlInput" placeholder="Add the URL of the image">
             <label for="colorPicker">Background</label>
             <input type="color" id="colorPicker">
+            <option value="ninguno"></option>
+            <select id="efecto" name="efecto">
+                <option value="ninguno">Ninguno</option>
+                <option value="aclarar">Aclarar</option>
+                <option value="oscurecer">Oscurecer</option>
+                <option value="diferencia">Diferencia</option>
+                <option value="luminosidad">Luminosidad</option>
+                <option value="multiplicar">Multiplicar</option>
+            </select>
             <h3>Filters:</h3>
             <label for="brightness">Bright</label>
             <input type="range" id="brightness" min="0" max="200" value="100">
