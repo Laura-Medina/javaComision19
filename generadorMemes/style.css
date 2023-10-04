@@ -15,8 +15,32 @@
         display: flex;
         flex-direction: column;
         background-color:#191e2b;
-        height: 141px;
+        height: 8.8rem;
         width: 100%;
+    }
+
+    .nav-items{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 20px;
+        font-size: 15px;
+    }
+
+    .list-nav{
+        /* display: inline-block; */
+        margin: 10px;
+        color: #ffffff;
+    }
+
+    .a-nav{
+        color: #ffffff;
+    }
+
+    .list-nav:hover{
+        background-color:#30343f;
+        transition:.3s;
     }
 
     .title-1{
@@ -28,29 +52,7 @@
         font-size: 35px;
     }
 
-    .nav-items{
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        margin: 20px;
-        font-size: 15px;
-    }
-
-    .list-nav{
-        display: inline-block;
-        margin: 10px;
-        color: #ffffff;
-    }
-
-    .a-nav{
-        color: #ffffff;
-    }
-
-    .list-nav:hover{
-        background-color:    #30343f;
-        transition:.3s;
-    }
-
+    /* estilos para las cajas */
     .container{
         display:flex;
         flex-direction: column;
@@ -62,14 +64,13 @@
 
     .box-black {
         width: 40%;
-        height: 400px;
+        height: 30rem;
         background-color: black;
         background-color: black;
-
     }
 
     .box-top{
-        height: 80px;
+        height: 100%;
         width: 40%;
         border: 2px solid white;
         background-color: white;
@@ -79,11 +80,10 @@
     padding: 15px;
     font-size: 30px;
     font-family: 'Anek Gurmukhi', sans-serif;
-
     }
 
     .box-bottom{
-        height: 80px;
+        height: 100%;
         width: 40%;
         border: 2px solid white;
         padding: 10px;
@@ -97,18 +97,20 @@
     }
 
         button {
-            width: 200px;
-            height: 50px;
-            background-color: #2e7d32;
-            color: white;
-            margin: 30px auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        width: 200px;
+        height: 50px;
+        background-color: #2e7d32;
+        color: white;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
     }
 
     .button-meme, .fa-download{
         color: white;
+        border: none;
     }
 
     /* este es el css del aside img  */
@@ -118,6 +120,7 @@
 
 .sidebar {
     width: 300px;
+    height: 100%;
     background-color:#252935;
     padding: 10px;
     color: white;
@@ -126,37 +129,35 @@
     text-align: center;
 }
 
-.sidebar h2 {
-    font-size: 18px;
-    text-align: center;
-}
-
 h3{
     margin: 10px;
 }
-.sidebar label {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
+
+input[type="text"]{
+    width: 90%;
+    height: 4%;
+    margin: 10px;
+    background-color: #393e49;
+    border: none;
 }
 
-.sidebar input[type="text"],
-.sidebar input[type="color"],
-.sidebar input[type="range"] {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-}
 
-.content {
-    flex-grow: 1;
-    padding: 20px;
-    background-color:#393e49;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+input[type="range"] {
+    width: 80%;
+    border: none;
 }
 
 #resetFilters{
     background-color: #393e49;
+    width: 150px;
+    border: none;
+}
+
+#colorPicker, #effect{
+    width: 90%;
+    height: 4%;
+    background-color:#393e49;
+
 }
 
 /* este es el css del aside texto que esta oculto */
@@ -178,15 +179,10 @@ label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
-}
-
-input[type="text"],  select {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-    background-color:#393e49;
+    border: none;
 }
 
 #spacing,#line-Spacing{
     background-color:#393e49;
+    border: none;
 }
