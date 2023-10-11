@@ -7,31 +7,34 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/de0fcf01b5.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@800&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="class-nav">
         <h1 class="title-1"> Memes Generator</h1>
-        <ul class="nav-items">
-        <li class="list-nav"> <i class="fa-regular fa-file-image"></i>
-        <a class="a-nav" href="#Image">Image</a></li>
-        <li class="list-nav"> <i class="fa-solid fa-font"></i> <a class="a-nav" href="#Text">Text</a></li>
-        <li class="list-nav"> <i class="fa-regular fa-lightbulb"></i> <a class="a-nav" href="#Dark Mode" >Dark Mode</a></li>
-        </ul>
+        <div class="nav-button">
+        <button class="button-img" id="button-nav"><i class="fa-regular fa-file-image"></i> Image
+    </button>
+    <button class="button-text" id="button-nav"> <i class="fa-solid fa-font"></i> Text
+    </button>
+    <button class="dark-mode" id="button-nav"> <i class="fa-regular fa-lightbulb"></i> Dark Mode
+    </button>
+        </div>
+
         <div class="aside-texto">
         <h3 class="title-text">TEXT</h3>
-        <label for="texto-top">Top</label>
+        <label for="text-top">Top</label>
         <input type="text" id="texto-top">
-        <label for="sin-texto">Without top text</label>
-        <input type="checkbox" id="sin-texto">
-        <label for="texto-bottom">Bottom</label>
-        <input type="text" id="texto-bottom">
-        <label for="sin-texto">Without bottom text</label>
-        <input type="checkbox" id="sin-texto">
-        <label for="fuente">Font</label>
-        <select id="fuente">
-        <option value="Arial">Arial</option>
+        <label for="no-text">Without top text</label>
+        <input type="checkbox" id="no-text">
+        <label for="text-bottom">Bottom</label>
+        <input type="text" id="text-bottom">
+        <label for="no-text">Without bottom text</label>
+        <input type="checkbox" id="no-text">
+        <label for="font">Font</label>
+        <select name="" id="font">
+        <option value="Arial">Select</option>
         <option value="Arial Black">Arial Black</option>
         <option value="American Typewriter">American Typewriter</option>
         <option value="Andale Mono">Andale Mono</option>
@@ -41,35 +44,35 @@
         <option value="Verdana">Verdana</option>
         <option value="Times New Roman">Times New Roman</option>
         </select>
-        <div class="alineacion-container">
+        <div class="alignment-container">
         <label>
-        <input type="radio" name="alineacion" value="left">
+        <input type="radio" name="alignment" value="left">
         <i class="fas fa-align-left"></i>
         </label>
         <label>
-        <input type="radio" name="alineacion" value="center">
+        <input type="radio" name="alignment" value="center">
         <i class="fas fa-align-center"></i>
         </label>
         <label>
-        <input type="radio" name="alineacion" value="right">
+        <input type="radio" name="alignment" value="right">
         <i class="fas fa-align-right"></i>
         </label>
         </div>
         <label for="color">Color</label>
         <input type="color" id="color" value="#000000">
-        <label for="fondo">Background</label>
-        <input type="color" id="fondo" value="#ffffff">
-        <label for="transparencia">Blur</label>
-        <input type="range" id="transparencia" min="0" max="1" step="0.01" value="1">
-        <label for="contorno">Outiline</label>
-        <select id="contorno">
-        <option value="ninguno">None</option>
-        <option value="oscuro">Dark</option>
-        <option value="claro">Light</option>
+        <label for="Background">Background</label>
+        <input type="color" id="Background" value="#ffffff">
+        <label for="Blur">Blur</label>
+        <input type="range" id="Blur1" min="0" max="1" step="0.01" value="1">
+        <label for="Outilineo">Outiline</label>
+        <select id="Outiline">
+        <option value="none">None</option>
+        <option value="dark">Dark</option>
+        <option value="bright">Light</option>
         </select>
-        <label for="espaciado">Spacing</label>
+        <label for="Spacing">Spacing</label>
         <input type="number" id="spacing" value="0">
-        <label for="interlineado">Line Spacing</label>
+        <label for="line-spacing">Line Spacing</label>
         <input type="number" id="line-Spacing" value="1.5">
         </div>
 
@@ -81,33 +84,33 @@
         <label for="colorPicker">Background</label>
         <input type="color" id="colorPicker">
         <option value="None"></option>
-        <select id="effect" name="efecto">
-        <option value="ninguno">None</option>
-        <option value="aclarar">Aclarar</option>
-        <option value="oscurecer">Oscurecer</option>
-        <option value="diferencia">Diferencia</option>
-        <option value="luminosidad">Luminosidad</option>
-        <option value="multiplicar">Multiplicar</option>
+        <select id="effect" name="effect">
+        <option value="none">None</option>
+        <option value="Clarify">Clarify</option>
+        <option value="Darken">Darken</option>
+        <option value="Difference">Difference</option>
+        <option value="Brightness">Brightness</option>
+        <option value="Multiply">Multiply</option>
         </select>
         <h3>Filters:</h3>
         <label for="brightness">Bright</label>
-        <input type="range" id="brightness" min="0" max="200" value="100">
+        <input type="range" id="brightness" min="0" max="1" value="1" step="0.1">
         <label for="opacity" class="filter-label">Opacity</label>
         <input type="range" id="opacity" min="0" max="1" step="0.1" value="1">
         <label for="contrast">Contrast</label>
-        <input type="range" id="contrast" min="0" max="200" value="100">
+        <input type="range" id="contrast" min="100" max="1000" value="100" step="1">
         <label for="blur" class="filter-label">Blur</label>
         <input type="range" id="blur" min="0" max="10" step="0.1" value="0">
         <label for="grayscale" class="filter-label">Gray Scale</label>
-        <input type="range" id="grayscale" min="0" max="1" step="0.1" value="0">
+        <input type="range" id="grayscale" min="0" max="100" step="1" value="0">
         <label for="sepia" class="filter-label">Sepia</label>
-        <input type="range" id="sepia" min="0" max="1" step="0.1" value="0">
+        <input type="range" id="sepia" min="0" max="100" step="1" value="0">
         <label for="hue" class="filter-label">Hue</label>
-        <input type="range" id="hue" min="0" max="360" step="1" value="0">
+        <input type="range" id="hue" min="0" max="359" step="1" value="0">
         <label for="saturate">Saturation</label>
-        <input type="range" id="saturate" min="0" max="200" value="100">
+        <input type="range" id="saturate" min="100" max="1000" value="100" step="10">
         <label for="invert" class="filter-label">Negative:</label>
-        <input type="range" id="invert" min="0" max="1" step="0.1" value="0">
+        <input type="range" id="invert" min="0" max="1" step="0.1" value="1">
         <button id="resetFilters">Reset Filters</button>
         </aside>
         </div>
@@ -121,7 +124,7 @@
         <p class="text-bottom"><strong>BOTTOM TEXT</strong></p>
         </div>
     </div>
-    <button>
+    <button class="download-meme">
         <i class="fa-solid fa-download">
         <a class="button-meme" href=" Meme">Download Meme</a>
         </i>

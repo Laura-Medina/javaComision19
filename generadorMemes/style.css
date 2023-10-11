@@ -1,188 +1,227 @@
 *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        list-style-type: none;
-        font-family: 'Roboto', sans-serif;
-    }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+}
 
-    body{
-        background-color: #30343f;
-    }
+body{
+    background-color: #30343f;
 
-    .class-nav{
-        display: flex;
-        flex-direction: column;
-        background-color:#191e2b;
-        height: 8.8em;
-        width: 100%;
-    }
-
-    .nav-items{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        margin: 20px;
-        font-size: 15px;
-    }
-
-    .list-nav{
-        margin: 10px;
-        color: #ffffff;
-    }
-
-    .a-nav{
-        color: #ffffff;
-    }
-
-    .list-nav:hover{
-        background-color:#30343f;
-        transition:.3s;
-        cursor: pointer;
-    }
-
-    .title-1{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: #ffffff;
-        padding: 10px;
-        font-size: 35px;
-    }
+}
 
 
-    /* estilos para las cajas */
-    .container{
-        display:flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin: 2px;
-    }
+.class-nav{
+    display: flex;
+    flex-direction: column;
+    background-color:#191e2b;
+    height: 10em;
+}
+
+.button-img, .button-text, .dark-mode{
+    display: inline-block;
+    flex-direction: row;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    left: 39%;
+    color: white;
+    border: none;
+    margin: 5px;
+    background-color:#191e2b;
+}
 
 
-    .box-black {
-        width: 40%;
-        height: 30rem;
-        background-color: black;
-        background-color: black;
-    }
+#button-nav:hover{
+    background-color:#30343f;
+    transition:.3s;
+    cursor: pointer;
+}
 
-    .box-top{
-        height: 100%;
-        width: 40%;
-        border: 2px solid white;
-        padding: 10px;
-        background-color: white;
-    }
 
-    .text-top{
-    padding: 15px;
-    font-size: 30px;
-    font-family: 'Anek Gurmukhi', sans-serif;
-    }
+.title-1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0px;
+    font-size: 35px;
+    margin: 35px;
+}
 
-    .box-bottom{
-        height: 100%;
-        width: 40%;
-        border: 2px solid white;
-        padding: 10px;
-        background-color: white;
-    }
 
-    .text-bottom{
-    padding: 15px;
-    font-size: 30px;
-    font-family: 'Anek Gurmukhi', sans-serif;
-    }
 
-        button {
-        width: 200px;
-        height: 50px;
-        background-color: #2e7d32;
-        color: white;
-        margin: 30px auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
-    }
+/* estilos para las cajas */
+.container{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
 
-    .button-meme, .fa-download{
-        color: white;
-        border: none;
-    }
 
-    /* este es el css del aside img  */
+.box-black {
+    width: 40%;
+    height: 30rem;
+    background-color: black;
+    background-color: black;
+}
+
+.box-top{
+    height: 100%;
+    width: 40%;
+    border: 2px solid white;
+    padding: 10px;
+    background-color: white;
+}
+
+.text-top{
+padding: 15px;
+font-size: 36px;
+font-weight: 600;
+}
+
+.box-bottom{
+    height: 100%;
+    width: 40%;
+    border: 2px solid white;
+    padding: 10px;
+    background-color: white;
+}
+
+.text-bottom{
+padding: 15px;
+font-size: 36px;
+font-weight: 600;
+}
+
+    #resetFilters {
+    width: 200px;
+    height: 50px;
+    color: white;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.download-meme{
+    display: flex;
+    background-color: #2e7d32;
+    width: 200px;
+    height: 40px;
+    position:relative;
+    left: 41%;
+    margin: 20px;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-meme, .fa-download{
+    display: inline-block;
+    color: white;
+    border: none;
+}
+
+/* este es el css del aside img  */
 
 .container-aside{
-    display: flex;
+display: flex;
 }
 
 .asidebar{
-    width: 20%;
-    background-color:#252935;
-    color: white;
-    position: relative;
-    left: 80%;
-    text-align: center;
-    padding: 20px;
+width: 20%;
+background-color:#252935;
+color: white;
+position: relative;
+left: 80%;
+text-align: center;
+padding: 20px;
 }
 
 input[type="text"]{
-    width: 90%;
-    height: 4%;
-    margin: 10px;
-    background-color: #393e49;
-    border: none;
+width: 90%;
+height: 4%;
+margin: 10px;
+background-color: #393e49;
+border: none;
 }
 
 
 input[type="range"] {
-    width: 80%;
-    border: none;
+width: 80%;
+border: none;
 }
 
 #resetFilters{
-    background-color: #393e49;
-    width: 150px;
-    border: none;
+background-color: #393e49;
+width: 150px;
+border: none;
 }
 
 #colorPicker, #effect{
-    width: 90%;
-    height: 4%;
-    background-color:#393e49;
+width: 90%;
+height: 4%;
+background-color:#393e49;
 
 }
 
 /* este es el css del aside texto que esta oculto */
 .aside-texto {
-    width: 20%;
-    background-color:#252935;
-    padding: 10px;
-    color: white;
-    position: relative;
-    left: 80%;
-    display: none;
+width: 20%;
+background-color:#252935;
+padding: 10px;
+color: white;
+position: relative;
+left: 80%;
+padding: 20px;
+display: none;
 }
 
 .title-text{
-    text-align: center;
+text-align: center;
 }
 
 label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    border: none;
+display: block;
+margin-top: 10px;
+font-weight: bold;
+border: none;
 }
 
 #spacing,#line-Spacing{
-    background-color:#393e49;
-    border: none;
+background-color:#393e49;
+border: none;
 }
 
+
+@media(max-width:799px) {
+.aside-texto, .asidebar{
+    display: none;
+}
+.button-img, .button-text, .dark-mode{
+    display: none;
+}
+
+@media (max-width:466px) {
+    .class-nav{
+        width: 110%;
+    }
+    .text-bottom, .text-top{
+        display: flex;
+        font-size:22px;
+    }
+    .text-bottom{
+        align-items: center;
+    }
+
+}
+}
