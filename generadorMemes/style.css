@@ -8,28 +8,36 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-:root {
-    --dark-background: #30343f;
-    --dark-text: #e7e7e7;
-    --light-background: #e7e7e7;
-    --light-text: #30343f;
+:root body.dark-theme {
+	--color-nav: #191e2b;
+	--color-background: #30343f;
+	--color-aside: #252935;
+	--color-text: #ffffff;
+    --color-reset:#393e49;
+
 }
 
-body {
-    background-color: var(--dark-background);
-    color: var(--dark-text);
+:root body.light-mode {
+	--color-nav: #e0e0e0;
+	--color-background: #eeeeee;
+	--color-aside: #fafafa;
+	--color-text: #424242;
+    --color-reset:#e0e0e0;
 }
 
-.light-mode {
-    background-color: var(--light-background);
-    color: var(--light-text);
+
+
+body.dark-theme {
+    background-color: var(--color-background);
+
 }
 
 .class-nav{
     display: flex;
     flex-direction: column;
-    background-color: #191e2b;
-    height: 10em;
+    background-color:var(--color-nav);
+    color: var(--color-text);
+    height: 9.9em;
 }
 
 .button-img, .button-text, .dark-mode{
@@ -42,11 +50,17 @@ body {
     color: white;
     border: none;
     margin: 5px;
-    background-color:#191e2b;
+    background-color:var(--color-nav);
+    color: var(--color-text);
 }
 
 
-#button-nav:hover{
+#button-img:hover{
+    background-color:#30343f;
+    transition:.3s;
+    cursor: pointer;
+}
+#button-text:hover{
     background-color:#30343f;
     transition:.3s;
     cursor: pointer;
@@ -62,7 +76,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #ffffff;
+    color:var(--color-text);
     padding: 0px;
     font-size: 35px;
     margin: 35px;
@@ -84,7 +98,6 @@ body {
 .box-black {
     width: 40%;
     height: 30rem;
-    background-color: black;
     background-color: black;
 }
 
@@ -121,12 +134,12 @@ color: black;
     #resetFilters {
     width: 200px;
     height: 50px;
-    color: white;
     margin: 30px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
+    background-color: var(--color-reset);
 }
 
 .download-meme{
@@ -156,8 +169,8 @@ display: flex;
 
 .asidebar{
 width: 20%;
-background-color:#252935;
-color: white;
+background-color:var(--color-aside);
+color:var(--color-text);
 position: relative;
 left: 80%;
 text-align: center;
@@ -168,7 +181,7 @@ input[type="text"]{
 width: 90%;
 height: 4%;
 margin: 10px;
-background-color: #393e49;
+background-color:var(--color-reset);
 border: none;
 }
 
@@ -179,7 +192,7 @@ border: none;
 }
 
 #resetFilters{
-background-color: #393e49;
+    background-color:var(--color-reset);
 width: 150px;
 border: none;
 }
@@ -187,20 +200,21 @@ border: none;
 #colorPicker, #effect{
 width: 90%;
 height: 4%;
-background-color:#393e49;
-
+background-color:var(--color-reset);
 }
 
 /* este es el css del aside texto que esta oculto */
 .aside-texto {
 width: 20%;
-background-color:#252935;
-padding: 10px;
-color: white;
+background-color:var(--color-aside);
+color:var(--color-text);
 position: relative;
 left: 80%;
 padding: 20px;
-display: none;
+}
+
+.visibility--hidden{
+    display: none;
 }
 
 .title-text{
@@ -209,14 +223,28 @@ text-align: center;
 
 label {
 display: block;
-margin-top: 10px;
+margin: 5px ;
 font-weight: bold;
 border: none;
 }
 
+.alignment-container{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.textTop,.textBottom{
+    width: 10%;
+}
+
+
 #spacing,#line-Spacing{
 background-color:#393e49;
 border: none;
+margin: 10px;
+width: 80%;
+height: 3%;
 }
 
 
