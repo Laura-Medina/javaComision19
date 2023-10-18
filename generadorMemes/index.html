@@ -25,13 +25,13 @@
         <h3 class="title-text">TEXT</h3>
         <label class="textTop" for="text-top">Top</label>
         <input type="text" id="texto-top">
-        <label id="noText" for="no-text">Without top text</label>
-        <input type="checkbox" id="no-text">
+        <label id="no-text" for="no-text">Without top text</label>
+        <input type="checkbox" id="no-text1">
         <label class="textBottom" for="text-bottom">Bottom</label>
-        <input type="text" id="text-bottom">
-        <label id="noText" for="no-text">Without bottom text</label>
-        <input type="checkbox" id="no-text">
-        <label for="font">Font</label>
+        <input type="text" id="texto-bottom">
+        <label id="no-text">Without bottom text</label>
+        <input type="checkbox" id="no-text2">
+        <label for="font" class="font-text">Font</label>
         <select name="" id="font">
         <option value="Arial">Select</option>
         <option value="Arial Black">Arial Black</option>
@@ -43,36 +43,55 @@
         <option value="Verdana">Verdana</option>
         <option value="Times New Roman">Times New Roman</option>
         </select>
+        <input type="number" name="" id="number" value="16">
         <div class="alignment-container">
         <label >
-        <input type="radio" name="alignment" value="left">
+        <input type="radio" name="alignment" value="left" id="aliLeft">
         <i class="fas fa-align-left"></i>
         </label>
         <label>
-        <input type="radio" name="alignment" value="center">
+        <input type="radio" name="alignment" value="center" id="aliCenter">
         <i class="fas fa-align-center"></i>
         </label>
         <label>
-        <input type="radio" name="alignment" value="right">
+        <input type="radio" name="alignment" value="right" id="aliRight">
         <i class="fas fa-align-right"></i>
         </label>
         </div>
-        <label for="color">Color</label>
-        <input type="color" id="color" value="#000000">
-        <label for="Background">Background</label>
-        <input type="color" id="Background" value="#ffffff">
-        <label for="Blur">Blur</label>
-        <input type="range" id="Blur1" min="0" max="1" step="0.01" value="1">
-        <label for="Outilineo">Outiline</label>
-        <select id="Outiline">
-        <option value="none">None</option>
-        <option value="dark">Dark</option>
-        <option value="bright">Light</option>
+
+        <div class="check-box">
+        <div class="colors">
+        <label for="colorFont">Color</label>
+        <input type="color" id="colorFont" value="#000000">
+        <label for="background">Background</label>
+        <input type="color" id="background" value="#ffffff">
+        </div>
+        <div id="background-checkbox">
+        <label for="background-checkbox">Transparent</label>
+        <input type="checkbox" id="background-checkbox">
+        </div>
+        </div>
+
+        <div class="outline">
+        <h3 class="outline-title">Outline</h3>
+        <button class="buttonNone" id="no-outline-button">Ninguno</button>
+        <button class="buttonDark" id="light-outline-button">Claro</button>
+        <button class="buttonBright" id="dark-outline-button">Oscuro</button>
+        </div>
+        <div class="padding">
+        <h3 class="padding-title">Padding:</h3>
+        <input type="number" id="paddingInput" class="paddingInput" aria-label="Espaciado" min="10" max="50" value="35">
+    </div>
+        <h3 class="lh-title">Line Height</h3>
+        <select id="line-height-input">
+        <option value="0.8">0.8</option>
+        <option value="1">1</option>
+        <option value="1.2">1.2</option>
+        <option value="1.5">1.5</option>
+        <option value="2">2</option>
+        <option value="2.5">2.5</option>
         </select>
-        <label for="Spacing">Spacing</label>
-        <input type="number" id="spacing" value="0">
-        <label for="line-spacing">Line Spacing</label>
-        <input type="number" id="line-Spacing" value="1.5">
+
         </div>
 
         <div class="container-aside">
@@ -117,13 +136,13 @@
 
 
 
-        <div class="container">
-        <div class="box-top">
-        <p class="text-top"><strong>TOP TEXT</strong></p>
+        <div class="container" id="caja">
+        <div class="box-top" id="displayTopText">
+        <p class="text-top" id="textTop"><strong>TOP TEXT</strong></p>
         </div>
     <div class="box-black"> </div>
-    <div class="box-bottom">
-        <p class="text-bottom"><strong>BOTTOM TEXT</strong></p>
+    <div class="box-bottom" id="displayBottomText">
+        <p class="text-bottom" id="textBottom"><strong>BOTTOM TEXT</strong></p>
         </div>
     <button class="download-meme">
         <i class="fa-solid fa-download">
