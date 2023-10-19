@@ -192,6 +192,7 @@ height: 4%;
 margin: 10px;
 background-color:var(--color-reset);
 border: none;
+text-align: center;
 }
 
 
@@ -204,12 +205,14 @@ border: none;
     background-color:var(--color-reset);
 width: 150px;
 border: none;
+cursor: pointer;
 }
 
-#colorPicker, #effect{
+#colorPicker, #selectMode{
 width: 90%;
 height: 4%;
 background-color:var(--color-reset);
+border: none;
 }
 
 /* este es el css del aside texto que esta oculto */

@@ -167,11 +167,91 @@ lineHeightInput.addEventListener('input', (e) => {
 });
 
 
-
-
-// aside img
+// ASIDE IMG
 // agregar la url para la img del meme
 $("#urlInput").addEventListener("input", (e) => {
     $(".box-black").style.backgroundImage = `url(${e.target.value})`
 })
 
+// fondo imagen
+$("#colorPicker").addEventListener("input", (e) => {
+    $(".box-black").style.backgroundColor = e.target.value;
+})
+
+// fondo select
+const menuSelector = $('#selectMode');
+
+colorPicker.addEventListener('input', () => {
+	const backgroundValue = colorPicker.value;
+	boxBlack.style.backgroundColor = backgroundValue;
+});
+
+menuSelector.addEventListener('change', () => {
+	boxBlack.style.backgroundBlendMode = menuSelector.value;
+});
+
+// filters
+$("#brightness1").addEventListener("input",(e)=>{
+	$(".box-black").style.filter=`brightness(${e.target.value}`
+})
+
+$("#opacity").addEventListener("input",(e)=>{
+	$(".box-black").style.filter=`opacity(${e.target.value}`
+})
+
+$("#contrast").addEventListener("input",(e)=>{
+	$(".box-black").style.filter=`contrast(${e.target.value}%`
+})
+
+$("#blur").addEventListener("input",(e)=>{
+	$(".box-black").style.filter=`blur(${e.target.value}px`
+})
+
+$("#grayscale").addEventListener("input",(e)=>{
+	$(".box-black").style.filter=`grayscale(${e.target.value}%`
+})
+
+$("#sepia").addEventListener("input",(e)=>{
+	$(".box-black").style.filter=`sepia(${e.target.value}%`
+})
+
+$("#hue").addEventListener("input",(e)=>{
+	$(".box-black").style.filter=`hue-rotate(${e.target.value}deg`
+})
+
+$("#saturate").addEventListener("input",(e)=>{
+	$(".box-black").style.filter=`saturate(${e.target.value}%`
+})
+
+$("#invert").addEventListener("input",(e)=>{
+	$(".box-black").style.filter=`invert(${e.target.value}`
+})
+
+// reset
+
+document.getElementById("resetFilters").addEventListener("click", () => {
+    document.getElementById("brightness1").value = "0";
+    document.getElementById("opacity").value = "1";
+    document.getElementById("contrast").value = "100";
+    document.getElementById("blur").value = "0";
+    document.getElementById("grayscale").value = "0";
+    document.getElementById("sepia").value = "0";
+    document.getElementById("hue").value = "0";
+    document.getElementById("saturate").value = "100";
+    document.getElementById("invert").value = "0";
+
+    document.querySelector(".box-black").style.filter = "none";
+});
+
+// boton de descarga
+
+const memeContainer = $('#meme');
+const downloadButton = $('#download-meme');
+
+const downloadMeme = () => {
+	domtoimage.toBlob(memeContainer).then(function(blob) {
+		saveAs(blob, 'my-meme.png');
+	});
+};
+
+downloadButton.addEventListener('click', downloadMeme);

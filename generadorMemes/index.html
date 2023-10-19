@@ -58,7 +58,6 @@
         <i class="fas fa-align-right"></i>
         </label>
         </div>
-
         <div class="check-box">
         <div class="colors">
         <label for="colorFont">Color</label>
@@ -71,7 +70,6 @@
         <input type="checkbox" id="background-checkbox">
         </div>
         </div>
-
         <div class="outline">
         <h3 class="outline-title">Outline</h3>
         <button class="buttonNone" id="no-outline-button">Ninguno</button>
@@ -91,7 +89,6 @@
         <option value="2">2</option>
         <option value="2.5">2.5</option>
         </select>
-
         </div>
 
         <div class="container-aside">
@@ -101,18 +98,19 @@
         <input type="text" id="urlInput" placeholder="Add the URL of the image">
         <label for="colorPicker">Background</label>
         <input type="color" id="colorPicker">
-        <option value="None"></option>
-        <select id="effect" name="effect">
-        <option value="none">None</option>
-        <option value="Clarify">Clarify</option>
-        <option value="Darken">Darken</option>
-        <option value="Difference">Difference</option>
-        <option value="Brightness">Brightness</option>
-        <option value="Multiply">Multiply</option>
+            <div class="select">
+        <select id="selectMode">
+        <option value="unset">None</option>
+        <option value="lighten">Clarify</option>
+        <option value="darken">Darken</option>
+        <option value="difference">Difference</option>
+        <option value="luminosity">Brightness</option>
+        <option value="multiply">Multiply</option>
         </select>
+        </div>
         <h3>Filters:</h3>
         <label for="brightness">Bright</label>
-        <input type="range" id="brightness" min="0" max="1" value="1" step="0.1">
+        <input type="range" id="brightness1" min="0" max="1" value="1" step="0.1">
         <label for="opacity" class="filter-label">Opacity</label>
         <input type="range" id="opacity" min="0" max="1" step="0.1" value="1">
         <label for="contrast">Contrast</label>
@@ -127,29 +125,30 @@
         <input type="range" id="hue" min="0" max="359" step="1" value="0">
         <label for="saturate">Saturation</label>
         <input type="range" id="saturate" min="100" max="1000" value="100" step="10">
-        <label for="invert" class="filter-label">Negative:</label>
-        <input type="range" id="invert" min="0" max="1" step="0.1" value="1">
+        <label for="invert">Negative:</label>
+        <input type="range" id="invert" min="0" max="1" value="1" step="0.1" >
         <button id="resetFilters">Reset Filters</button>
         </aside>
     </div>
     </nav>
-
-
-
-        <div class="container" id="caja">
-        <div class="box-top" id="displayTopText">
+        <div class="container"  id="meme">
+        <div class="box-top" id="displayTopText" >
         <p class="text-top" id="textTop"><strong>TOP TEXT</strong></p>
         </div>
-    <div class="box-black"> </div>
-    <div class="box-bottom" id="displayBottomText">
+    <div class="box-black" id="boxBlack" > </div>
+    <div class="box-bottom" id="displayBottomText" >
         <p class="text-bottom" id="textBottom"><strong>BOTTOM TEXT</strong></p>
         </div>
-    <button class="download-meme">
+    <button class="download-meme" id="download-meme">
         <i class="fa-solid fa-download">
-        <a class="button-meme" href=" Meme">Download Meme</a>
+        <a class="button-meme" href=" Meme1">Download Meme</a>
         </i>
     </button>
 </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 </html>
