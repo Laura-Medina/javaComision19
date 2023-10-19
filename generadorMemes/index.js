@@ -1,5 +1,5 @@
 
-const $ = (selector) => document.querySelector(selector);
+const $ = (element) => document.querySelector(element);
 
 
 // modo oscuro
@@ -240,18 +240,18 @@ document.getElementById("resetFilters").addEventListener("click", () => {
     document.getElementById("saturate").value = "100";
     document.getElementById("invert").value = "0";
 
-    document.querySelector(".box-black").style.filter = "none";
+    document.querySelector("#descargadeMeme").style.filter = "none";
 });
 
 // boton de descarga
 
-const downloadMeme=()=>{
-	domtoimage.toBlob($(".containerMeme")).then((blob) => {
+const descargaMeme=()=>{
+	domtoimage.toBlob($(".container")).then((blob) => {
         saveAs(blob, "my-meme.png")
     })
 }
 
-$("#downloadMeme").addEventListener("click", downloadMeme)
+$("#downloadMeme").addEventListener("click", descargaMeme)
 
 
 
