@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous"></script>
+
     <title>Memes Generator</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/de0fcf01b5.js" crossorigin="anonymous"></script>
@@ -131,24 +134,22 @@
         </aside>
     </div>
     </nav>
-        <div class="container"  id="meme">
-        <div class="box-top" id="displayTopText" >
-        <p class="text-top" id="textTop"><strong>TOP TEXT</strong></p>
+        <div class="container ">
+            <div id="descargadeMeme"> </div>
+        <div class="box-top" id="displayTopText"id="descargadeMeme" >
+        <p class="text-top" id="textTop" ><strong>TOP TEXT</strong></p>
         </div>
-    <div class="box-black" id="boxBlack" > </div>
-    <div class="box-bottom" id="displayBottomText" >
-        <p class="text-bottom" id="textBottom"><strong>BOTTOM TEXT</strong></p>
+    <div class="box-black" id="boxBlack"  > </div>
+    <div class="box-bottom" id="displayBottomText"  >
+        <p class="text-bottom" id="textBottom" ><strong>BOTTOM TEXT</strong></p>
         </div>
-    <button class="download-meme" id="download-meme">
+    <button class="download-meme" id="downloadMeme">
         <i class="fa-solid fa-download">
         <a class="button-meme" href=" Meme1">Download Meme</a>
         </i>
     </button>
 </div>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 </html>

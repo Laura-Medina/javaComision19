@@ -1,5 +1,5 @@
 
-const $ = (element) => document.querySelector(element);
+const $ = (selector) => document.querySelector(selector);
 
 
 // modo oscuro
@@ -245,13 +245,13 @@ document.getElementById("resetFilters").addEventListener("click", () => {
 
 // boton de descarga
 
-const memeContainer = $('#meme');
-const downloadButton = $('#download-meme');
+const downloadMeme=()=>{
+	domtoimage.toBlob($(".containerMeme")).then((blob) => {
+        saveAs(blob, "my-meme.png")
+    })
+}
 
-const downloadMeme = () => {
-	domtoimage.toBlob(memeContainer).then(function(blob) {
-		saveAs(blob, 'my-meme.png');
-	});
-};
+$("#downloadMeme").addEventListener("click", downloadMeme)
 
-downloadButton.addEventListener('click', downloadMeme);
+
+
