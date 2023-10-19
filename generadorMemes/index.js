@@ -110,6 +110,24 @@ $("#background").addEventListener("input", (e) => {
 
 // trasnparent
 
+const transparentBackground = $('#background-checkbox');
+
+transparentBackground.addEventListener('click', () => {
+	if (transparentBackground.checked === true) {
+		displayTopText.style.backgroundColor = 'black';
+	} else {
+		displayTopText.style.backgroundColor = 'black';
+	}
+});
+
+transparentBackground.addEventListener('click', () => {
+	if (transparentBackground.checked === true) {
+		displayBottomText.style.backgroundColor = 'black';
+	} else {
+		displayBottomText.style.backgroundColor = 'black';
+	}
+});
+
 
 // outline
 const noOutlineButton = $('#no-outline-button');
