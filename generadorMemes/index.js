@@ -114,17 +114,17 @@ const transparentBackground = $('#background-checkbox');
 
 transparentBackground.addEventListener('click', () => {
 	if (transparentBackground.checked === true) {
-		displayTopText.style.backgroundColor = 'black';
+		displayTopText.style.backgroundColor = 'transparent';
 	} else {
-		displayTopText.style.backgroundColor = 'black';
+		displayTopText.style.backgroundColor = 'transparent';
 	}
 });
 
 transparentBackground.addEventListener('click', () => {
 	if (transparentBackground.checked === true) {
-		displayBottomText.style.backgroundColor = 'black';
+		displayBottomText.style.backgroundColor = 'transparent';
 	} else {
-		displayBottomText.style.backgroundColor = 'black';
+		displayBottomText.style.backgroundColor = 'transparent';
 	}
 });
 
@@ -229,24 +229,25 @@ $("#invert").addEventListener("input",(e)=>{
 
 // reset
 
-document.getElementById("resetFilters").addEventListener("click", () => {
-    document.getElementById("brightness1").value = "0";
-    document.getElementById("opacity").value = "1";
-    document.getElementById("contrast").value = "100";
-    document.getElementById("blur").value = "0";
-    document.getElementById("grayscale").value = "0";
-    document.getElementById("sepia").value = "0";
-    document.getElementById("hue").value = "0";
-    document.getElementById("saturate").value = "100";
-    document.getElementById("invert").value = "0";
+$("#resetFilters").addEventListener("click", () => {
+	$("#brightness1").value = "100"
+	$("#opacity").value = "100"
+	$("#contrast").value = "0"
+	$("#blur").value = "0"
+    $("#grayscale").value = "0"
+	$("#sepia").value = "0"
+	$("#hue").value = "0"
+	$("#saturate").value = "0"
+	$("#invert").value = "0"
+    $(".box-black").style.filter = "none"
+})
 
-    document.querySelector("#descargadeMeme").style.filter = "none";
-});
+
 
 // boton de descarga
 
 const descargaMeme=()=>{
-	domtoimage.toBlob($(".container")).then((blob) => {
+	domtoimage.toBlob($("#descargadeMeme")).then((blob) => {
         saveAs(blob, "my-meme.png")
     })
 }
