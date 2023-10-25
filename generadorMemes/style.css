@@ -377,6 +377,9 @@ border: none;
     .text-bottom{
         align-items: center;
     }
+	    .download-meme{
+        width: 100px;
+    }
 
 }
 }
