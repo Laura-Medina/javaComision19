@@ -116,7 +116,7 @@ transparentBackground.addEventListener('click', () => {
 	if (transparentBackground.checked === true) {
 		displayTopText.style.backgroundColor = 'transparent';
 	} else {
-		displayTopText.style.backgroundColor = 'transparent';
+		displayTopText.style.backgroundColor = '';
 	}
 });
 
@@ -124,7 +124,7 @@ transparentBackground.addEventListener('click', () => {
 	if (transparentBackground.checked === true) {
 		displayBottomText.style.backgroundColor = 'transparent';
 	} else {
-		displayBottomText.style.backgroundColor = 'transparent';
+		displayBottomText.style.backgroundColor = '';
 	}
 });
 
@@ -226,6 +226,24 @@ $("#saturate").addEventListener("input",(e)=>{
 $("#invert").addEventListener("input",(e)=>{
 	$(".box-black").style.filter=`invert(${e.target.value}`
 })
+
+// allFilters
+
+const allFiltersMeme = () => {
+    $(".box-black").style.filter = `brightness(${$("#brightness1").value}) opacity(${$("#opacity").value})
+        contrast(${$("#contrast").value}%) blur(${$("#blur").value}px) grayscale(${$("#grayscale").value}%)
+        sepia(${$("#sepia").value}%) hue-rotate(${$("#hue").value}deg) saturate(${$("#saturate").value}%) invert(${$("#invert").value})`;
+}
+
+$("#brightness1").addEventListener("input", allFiltersMeme);
+$("#opacity").addEventListener("input", allFiltersMeme);
+$("#contrast").addEventListener("input", allFiltersMeme);
+$("#blur").addEventListener("input", allFiltersMeme);
+$("#grayscale").addEventListener("input", allFiltersMeme);
+$("#sepia").addEventListener("input", allFiltersMeme);
+$("#hue").addEventListener("input", allFiltersMeme);
+$("#saturate").addEventListener("input", allFiltersMeme);
+$("#invert").addEventListener("input", allFiltersMeme);
 
 // reset
 
